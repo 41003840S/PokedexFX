@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="890.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <MenuBar layoutX="352.0" layoutY="29.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="cerrar" mnemonicParsing="false" onAction="#salirAplicacion" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#borrarPoke" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#about" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Text layoutX="50.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="POKEDEX" wrappingWidth="231.99998915195465">
+         <font>
+            <Font name="Roboto Regular" size="52.0" />
+         </font>
+      </Text>
+      <ListView fx:id="listView" layoutX="15.0" layoutY="126.0" prefHeight="259.0" prefWidth="302.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="126.0" />
+      <ImageView fx:id="imagen" fitHeight="200.0" fitWidth="200.0" layoutX="359.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="63.0" AnchorPane.leftAnchor="359.0" AnchorPane.rightAnchor="331.0" AnchorPane.topAnchor="137.0" />
+      <HBox layoutX="586.0" layoutY="200.0" prefHeight="27.0" prefWidth="124.0" AnchorPane.leftAnchor="586.0" AnchorPane.rightAnchor="180.0">
+         <children>
+            <Label prefHeight="27.0" prefWidth="84.0" text="HP: " />
+            <Label fx:id="hp" />
+         </children>
+      </HBox>
+      <HBox layoutX="586.0" layoutY="237.0">
+         <children>
+            <Label prefHeight="27.0" prefWidth="82.0" text="ATACK: " />
+            <Label fx:id="ataque" />
+         </children>
+      </HBox>
+      <HBox layoutX="586.0" layoutY="271.0">
+         <children>
+            <Label prefHeight="27.0" prefWidth="82.0" text="DEFENSE: " />
+            <Label fx:id="defensa" />
+         </children>
+      </HBox>
+      <HBox layoutX="586.0" layoutY="306.0" AnchorPane.leftAnchor="586.0" AnchorPane.rightAnchor="180.0">
+         <children>
+            <Label prefHeight="27.0" prefWidth="82.0" text="WEIGHT: " />
+            <Label fx:id="peso" />
+         </children>
+      </HBox>
+      <Circle fx:id="image" accessibleRole="IMAGE_VIEW" fill="#1f93ff" layoutX="459.0" layoutY="237.0" opacity="0.08" radius="100.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="63.0" AnchorPane.leftAnchor="359.0" AnchorPane.rightAnchor="331.0" AnchorPane.topAnchor="137.0" />
+      <Label fx:id="nombre" layoutX="586.0" layoutY="140.0" prefHeight="27.0" prefWidth="170.0" AnchorPane.leftAnchor="586.0" AnchorPane.rightAnchor="134.0">
+         <font>
+            <Font name="Roboto Regular" size="28.0" />
+         </font>
+      </Label>
+      <Slider fx:id="slider" layoutX="389.0" layoutY="353.0" />
+   </children>
+</AnchorPane>

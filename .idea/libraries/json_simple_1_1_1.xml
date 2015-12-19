@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="json-simple-1.1.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../DAM 02/M06 Acces a dades/UF2/json-simple-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../DAM 02/M06 Acces a dades/UF2/postgresql-9.4-1206-jdbc4-Driver.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../DAM 02/M06 Acces a dades/UF2/sqlite-jdbc-3.8.11.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../DAM 02/M06 Acces a dades/UF2/sqlite-jdbc-3.8.11.2.jar!/" />
+    </SOURCES>
+  </library>
+</component>
