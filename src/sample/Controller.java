@@ -60,7 +60,9 @@ public class Controller {
                 peso.setText(poke1.peso);
             }
         });
-
+        slider.setMin(0.5);
+        slider.setMax(1.5);
+        slider.setValue(1);
         // Listen for Slider value changes
         slider.valueProperty().addListener(new ChangeListener<Number>() {
             @Override
@@ -68,8 +70,8 @@ public class Controller {
                                 Number oldValue, Number newValue) {
 
 
-                imagen.resize(slider.getValue(),slider.getValue());
-                System.out.println(slider.getValue());
+                imagen.setScaleX(newValue.doubleValue());
+                imagen.setScaleY(newValue.doubleValue());
 
 
             }

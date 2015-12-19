@@ -41,7 +41,6 @@
          </font>
       </Text>
       <ListView fx:id="listView" layoutX="15.0" layoutY="126.0" prefHeight="259.0" prefWidth="302.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="126.0" />
-      <ImageView fx:id="imagen" fitHeight="200.0" fitWidth="200.0" layoutX="359.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="63.0" AnchorPane.leftAnchor="359.0" AnchorPane.rightAnchor="331.0" AnchorPane.topAnchor="137.0" />
       <HBox layoutX="586.0" layoutY="200.0" prefHeight="27.0" prefWidth="124.0" AnchorPane.leftAnchor="586.0" AnchorPane.rightAnchor="180.0">
          <children>
             <Label prefHeight="27.0" prefWidth="84.0" text="HP: " />
@@ -66,12 +65,13 @@
             <Label fx:id="peso" />
          </children>
       </HBox>
-      <Circle fx:id="image" accessibleRole="IMAGE_VIEW" fill="#1f93ff" layoutX="459.0" layoutY="237.0" opacity="0.08" radius="100.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="63.0" AnchorPane.leftAnchor="359.0" AnchorPane.rightAnchor="331.0" AnchorPane.topAnchor="137.0" />
       <Label fx:id="nombre" layoutX="586.0" layoutY="140.0" prefHeight="27.0" prefWidth="170.0" AnchorPane.leftAnchor="586.0" AnchorPane.rightAnchor="134.0">
          <font>
             <Font name="Roboto Regular" size="28.0" />
          </font>
       </Label>
+      <Circle fx:id="image" accessibleRole="IMAGE_VIEW" fill="#1f93ff" layoutX="459.0" layoutY="237.0" opacity="0.08" radius="100.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="63.0" AnchorPane.leftAnchor="359.0" AnchorPane.rightAnchor="331.0" AnchorPane.topAnchor="137.0" />
+      <ImageView fx:id="imagen" fitHeight="200.0" fitWidth="200.0" layoutX="359.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true" />
       <Slider fx:id="slider" layoutX="389.0" layoutY="353.0" />
    </children>
 </AnchorPane>
